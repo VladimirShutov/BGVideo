@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Безопасный город Архангельск</string>
+    <string name="button_registration">Вход/Регистрация</string>
+    <string name="text_login">Логин</string>
 </resources>

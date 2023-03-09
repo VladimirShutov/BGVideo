@@ -14,7 +14,7 @@
         android:layout_marginTop="240dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Name"
+        android:text="@string/text_login"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -35,7 +35,7 @@
         android:layout_height="62dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="484dp"
-        android:text="Button"
+        android:text="@string/button_registration"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
