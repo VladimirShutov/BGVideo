@@ -2,5 +2,6 @@
     <string name="app_name">Безопасный город Архангельск</string>
     <string name="button_registration">Вход/Регистрация</string>
     <string name="text_login">Логин</string>
+    <string name="text_password">Пароль</string>
     <string name="text_header"><b>БЕЗОПАСНЫЙ ГОРОД</b> Архангельской области</string>
 </resources>

@@ -9,14 +9,14 @@
     tools:context=".MainActivity">
 
     <EditText
-        android:id="@+id/editTextTextPersonName2"
+        android:id="@+id/edTextLogin"
         android:layout_width="380dp"
         android:layout_height="66dp"
         android:backgroundTint="#000000"
         android:ems="10"
+        android:hint="@string/text_login"
         android:inputType="textPersonName"
         android:shadowColor="#C1C1C1"
-        android:text="@string/text_login"
         android:textColor="@color/black"
         android:textColorHighlight="#000000"
         android:textColorLink="#000000"
@@ -28,38 +28,44 @@
         app:layout_constraintVertical_bias="0.372" />
 
     <EditText
-        android:id="@+id/editTextTextPassword2"
-        android:layout_width="380dp"
+        android:id="@+id/edTextPassword"
+        android:layout_width="0dp"
         android:layout_height="66dp"
+        android:layout_marginTop="32dp"
         android:backgroundTint="#000000"
         android:ems="10"
+        android:hint="@string/text_password"
         android:inputType="textPassword"
         android:shadowColor="#C1C1C1"
         android:textColor="@color/black"
         android:textColorHighlight="#000000"
         android:textColorLink="#000000"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toEndOf="@+id/edTextLogin"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/edTextLogin"
+        app:layout_constraintTop_toBottomOf="@+id/edTextLogin"
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/Button_login"
-        android:layout_width="380dp"
+        android:layout_width="0dp"
         android:layout_height="66dp"
+        android:layout_marginTop="90dp"
         android:backgroundTint="#008bd0"
         android:text="@string/button_registration"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/edTextPassword"
         app:layout_constraintHorizontal_bias="0.516"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.732" />
+        app:layout_constraintStart_toStartOf="@+id/edTextPassword"
+        app:layout_constraintTop_toBottomOf="@+id/edTextPassword"
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/textView_bgLogo"
         android:layout_width="402dp"
         android:layout_height="58dp"
+        android:layout_marginTop="25dp"
         android:autoSizeTextType="uniform"
         android:gravity="center_horizontal"
         android:onClick="onClickButtonLogin"
@@ -70,6 +76,6 @@
         app:layout_constraintHorizontal_bias="0.444"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.044" />
+        app:layout_constraintVertical_bias="0.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

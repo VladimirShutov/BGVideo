@@ -11,14 +11,15 @@ import com.yandex.mapkit.mapview.MapView
 class MainActivity_map : AppCompatActivity() {
 
     lateinit var mapView: MapView
+    val apiKey_yaMaps = "3a8b31ff-ea03-4c29-b536-711c0d6ca7cf"
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        MapKitFactory.setApiKey("3a8b31ff-ea03-4c29-b536-711c0d6ca7cf")
+        MapKitFactory.setApiKey(apiKey_yaMaps)
         MapKitFactory.initialize(this)
         setContentView(R.layout.activity_main_map)
         mapView = findViewById(R.id.ya_mapview)
-        mapView.map.move(CameraPosition(Point(64.546068, 40.551780), 11.0f, 0.0f, 0.0f),
-        Animation(Animation.Type.SMOOTH, 300f), null)
+        mapView.map.move(CameraPosition(Point(64.546068, 40.551780), 13.0f, 0.0f, 0.0f),
+        Animation(Animation.Type.SMOOTH, 2f), null)
     }
 
     override fun onStop() {
